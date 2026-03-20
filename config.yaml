@@ -25,3 +25,39 @@ subscriptions:
     stage: A
     diff_threshold_pct: 15
   keyword_recall_mode: or
+  intent_profiles:
+    - tag: WM ARM
+      description: 世界模型与机械臂操作相关的长时序与4D研究
+      enabled: true
+      keywords:
+        - keyword: robot manipulation
+          keyword_cn: ''
+          query: robot manipulation
+        - keyword: video generation
+          keyword_cn: ''
+          query: s
+        - keyword: world model
+          keyword_cn: ''
+          query: w
+      intent_queries:
+        - query: world models for long horizon robotic manipulation tasks
+          query_cn: 用于长时序机械臂操作任务的世界模型
+          enabled: true
+          source: manual
+          note: ''
+        - query: 4D spatio temporal representations in robot world models
+          query_cn: 机器人世界模型中的4D时空表示
+          enabled: true
+          source: manual
+          note: ''
+        - query: long term planning and 4D perception for robotic arms
+          query_cn: 机械臂的长时序规划与4D感知
+          enabled: true
+          source: manual
+          note: ''
+        - query: learning world models from 4D point cloud sequences for manipulation
+          query_cn: 从用于操作的4D点云序列中学习世界模型
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-03-20T06:47:00.595Z'
